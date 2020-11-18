@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="this is meta description">
+  <meta name="description" content="Python練習筆記02">
   <meta name="author" content="shou">
   <meta name="generator" content="Hugo 0.78.2" />
 
@@ -115,22 +115,57 @@
 <section class="section-sm">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 mx-auto text-center">
+      <div class="col-lg-8 mx-auto">
         
-        <img src="https://shou0802.github.io/images/jojo.jpg" alt="" class="img-fluid d-block mx-auto rounded-circle mb-4">
+        <a href="/categories/python"
+          class="text-primary">Python</a>
         
-        <h4 class="widget-title">About Me</h4>
-        <div class="content">
-          <p>一個從事遊戲業經歷10年，通過日本語能力檢定一級的阿宅。</p>
-<p>目前努力學習Python中，請給予溫暖的眼神。</p>
+        <h2>Python練習筆記02</h2>
+        <div class="mb-3 post-meta">
+          <span>By shou</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>18 November 2020</span>
+          
+        </div>
+        
+        <img src="https://shou0802.github.io/images/post/python.jpg" class="img-fluid w-100 mb-4" alt="Python練習筆記02">
+        
+        <div class="content mb-5">
+          <h1 id="閏年判斷">閏年判斷</h1>
+<p>•設計說明：</p>
+<p>請撰寫一程式，讓使用者輸入一個西元年年份，程式輸出顯示是否為閏年。
+提示：每4年一閏、遇100年不閏、遇400年要閏</p>
+<pre><code># -*- coding: utf-8 -*-
+&quot;&quot;&quot;
+Created on Thu Nov 12 14:26:17 2020
+
+@author: shou
+&quot;&quot;&quot;
+
+year = int(input(&quot;請輸入一個西元年份:&quot;))
+x = year % 4
+y = year % 400
+z = year % 100
+if x == 0:
+  if y == 0:
+   print(&quot;{}年是閏年&quot;.format(year))
+  elif z == 0:
+   print(&quot;{}年不是閏年&quot;.format(year))
+  else:
+   print(&quot;{}年是閏年&quot;.format(year))
+elif x &gt; 0:
+ print(&quot;{}年不是閏年&quot;.format(year))
+</code></pre><p>​</p>
 
         </div>
+
+        
+        
       </div>
     </div>
   </div>
 </section>
-
-
 
 
 

@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="this is meta description">
+  <meta name="description" content="Python練習筆記05">
   <meta name="author" content="shou">
   <meta name="generator" content="Hugo 0.78.2" />
 
@@ -115,22 +115,46 @@
 <section class="section-sm">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 mx-auto text-center">
+      <div class="col-lg-8 mx-auto">
         
-        <img src="https://shou0802.github.io/images/jojo.jpg" alt="" class="img-fluid d-block mx-auto rounded-circle mb-4">
+        <a href="/categories/python"
+          class="text-primary">Python</a>
         
-        <h4 class="widget-title">About Me</h4>
-        <div class="content">
-          <p>一個從事遊戲業經歷10年，通過日本語能力檢定一級的阿宅。</p>
-<p>目前努力學習Python中，請給予溫暖的眼神。</p>
-
+        <h2>Python練習筆記05</h2>
+        <div class="mb-3 post-meta">
+          <span>By shou</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>18 November 2020</span>
+          
         </div>
+        
+        <img src="https://shou0802.github.io/images/post/python.jpg" class="img-fluid w-100 mb-4" alt="Python練習筆記05">
+        
+        <div class="content mb-5">
+          <h1 id="列印九九乘法表">列印九九乘法表</h1>
+<p>•設計說明：</p>
+<p>請撰寫一程式，列印九九乘法表，且呈現方式如下顯示，並且排列整齊。</p>
+<pre><code># -*- coding: utf-8 -*-
+&quot;&quot;&quot;
+Created on Mon Nov 16 15:38:46 2020
+
+@author: shou
+&quot;&quot;&quot;
+
+for i in range(2,10):
+    for j in range(1,10):
+        print(&quot;{}*{}={:&lt;2}&quot;.format(i,j,i*j),end = ' ')
+    print()
+</code></pre>
+        </div>
+
+        
+        
       </div>
     </div>
   </div>
 </section>
-
-
 
 
 

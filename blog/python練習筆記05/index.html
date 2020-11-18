@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="this is meta description">
+  <meta name="description" content="Python練習筆記04">
   <meta name="author" content="shou">
   <meta name="generator" content="Hugo 0.78.2" />
 
@@ -115,22 +115,90 @@
 <section class="section-sm">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 mx-auto text-center">
+      <div class="col-lg-8 mx-auto">
         
-        <img src="https://shou0802.github.io/images/jojo.jpg" alt="" class="img-fluid d-block mx-auto rounded-circle mb-4">
+        <a href="/categories/python"
+          class="text-primary">Python</a>
         
-        <h4 class="widget-title">About Me</h4>
-        <div class="content">
-          <p>一個從事遊戲業經歷10年，通過日本語能力檢定一級的阿宅。</p>
-<p>目前努力學習Python中，請給予溫暖的眼神。</p>
-
+        <h2>Python練習筆記04</h2>
+        <div class="mb-3 post-meta">
+          <span>By shou</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>18 November 2020</span>
+          
         </div>
+        
+        <img src="https://shou0802.github.io/images/post/python.jpg" class="img-fluid w-100 mb-4" alt="Python練習筆記04">
+        
+        <div class="content mb-5">
+          <h1 id="列印數字三角形">列印數字三角形</h1>
+<p>•設計說明1：</p>
+<p>請撰寫一程式，第一排列印1~9，中間間一空白，第二排列印2~9，第三排3~9，第四排4~9，…</p>
+<p>•設計說明2：</p>
+<p>請撰寫一程式，第一排列印1，第二排列印1~2，中間間一空白，第三排1~3，第四排1~4，…</p>
+<pre><code># -*- coding: utf-8 -*-
+&quot;&quot;&quot;
+Created on Mon Nov 16 15:29:27 2020
+
+@author: shou
+&quot;&quot;&quot;
+#####練習1
+
+for r in range(1,10):
+ for c in range(r,10):
+  print(c, end=' ')
+ print()        
+
+#####練習2
+
+for r in range(1,11):
+ for c in range(1,r):
+  print(c, end=' ')
+ print()   
+ 
+
+</code></pre><p>•設計說明：</p>
+<p>請撰寫一程式，第一排列印1，第二排列印2~1，中間間一空白，第三排3~1，第四排4~1，…</p>
+<pre><code># -*- coding: utf-8 -*-
+&quot;&quot;&quot;
+Created on Mon Nov 16 18:19:15 2020
+
+@author: shou
+&quot;&quot;&quot;
+
+#####練習3
+
+for r in range(1,10):
+ for c in range(r,-5,-1):
+  print(c, end=' ')
+ print() 
+</code></pre><p>•設計說明：</p>
+<p>請撰寫一程式，讓使用者輸入一個數字n，則用@字元列印出n 層的等腰三角形</p>
+<pre><code># -*- coding: utf-8 -*-
+&quot;&quot;&quot;
+Created on Mon Nov 16 15:10:30 2020
+
+@author: shou
+&quot;&quot;&quot;
+#等腰三角形
+n = int(input(&quot;請輸入數字:&quot;))
+for i in range(1,n+1):
+    print(&quot; &quot;*(n-i)+&quot;@&quot;*(i)+&quot;@&quot;*(i-1))
+    
+#菱形
+n = int(input(&quot;請輸入數字:&quot;))
+for i in range(1,n+1):
+    print(&quot; &quot;*(n-i)+&quot;@&quot;*(i)+&quot;@&quot;*(n-i))
+</code></pre>
+        </div>
+
+        
+        
       </div>
     </div>
   </div>
 </section>
-
-
 
 
 

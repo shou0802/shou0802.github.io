@@ -57,7 +57,7 @@
     
     <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
       <a class="navbar-brand mobile-view" href="https://shou0802.github.io"><img class="img-fluid"
-          src="https://shou0802.github.io/images/logo.png" alt="阿粥系的部落格"></a>
+          src="https://shou0802.github.io/images/logo-black.png" alt="阿粥系的部落格"></a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
         <i class="ti-menu h3"></i>
       </button>
@@ -74,13 +74,19 @@
         </div>
 
         <a class="navbar-brand mx-auto desktop-view" href="https://shou0802.github.io"><img class="img-fluid"
-            src="https://shou0802.github.io/images/logo.png" alt="阿粥系的部落格"></a>
+            src="https://shou0802.github.io/images/logo-black.png" alt="阿粥系的部落格"></a>
 
         <ul class="navbar-nav">
           
           
           <li class="nav-item">
             <a class="nav-link" href="https://shou0802.github.io/about">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://shou0802.github.io/blog">Post</a>
           </li>
           
           
@@ -119,7 +125,7 @@
           <span>By shou</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
-          <span>08 November 2020</span>
+          <span>18 November 2020</span>
           
         </div>
         
@@ -127,44 +133,46 @@
         
         <div class="content mb-5">
           <h1 id="運算式輸入計算練習">運算式輸入計算練習</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># -*- coding: utf-8 -*-</span>
-<span style="color:#e6db74">&#34;&#34;&#34;
-</span><span style="color:#e6db74">Created on Thu Nov 12 13:09:12 2020
-</span><span style="color:#e6db74">
-</span><span style="color:#e6db74">@author: shou
-</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+<p>設計說明：</p>
+<p>請撰寫一程式，讓使用者輸入兩個整數a, b，接著輸入其中一個運算子(+、-、*、/、//、%、** )，最後輸出兩個整數運算的結果。</p>
+<pre><code># -*- coding: utf-8 -*-
+&quot;&quot;&quot;
+Created on Thu Nov 12 13:09:12 2020
 
-x <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#34;請輸入第一個整數:&#34;</span>))
-y <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#34;請輸入第二個整數:&#34;</span>))
-z <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;請輸入運算方式(+、-、*、/、//、%、**):&#34;</span>)
+@author: shou
+&quot;&quot;&quot;
 
-<span style="color:#66d9ef">if</span> z <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;+&#39;</span>:
-   <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;計算結果為({}+{}={})&#34;</span><span style="color:#f92672">.</span>format(x,y,(x<span style="color:#f92672">+</span>y)))
-<span style="color:#66d9ef">elif</span> z <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;-&#39;</span>:
-   <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;計算結果為({}-{}={})&#34;</span><span style="color:#f92672">.</span>format(x,y,(x<span style="color:#f92672">-</span>y))) 
-<span style="color:#66d9ef">elif</span> z <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;*&#39;</span>:
-   <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;計算結果為({}*{}={})&#34;</span><span style="color:#f92672">.</span>format(x,y,(x<span style="color:#f92672">*</span>y))) 
-<span style="color:#66d9ef">elif</span> z <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;/&#39;</span>:
-    <span style="color:#66d9ef">if</span> y <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
-      <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;除數不可為0&#34;</span>)    
-    <span style="color:#66d9ef">elif</span> y <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:  
-      <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;計算結果為({}/{}={})&#34;</span><span style="color:#f92672">.</span>format(x,y,(x<span style="color:#f92672">/</span>y))) 
-<span style="color:#66d9ef">elif</span> z <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;//&#39;</span>:
-    <span style="color:#66d9ef">if</span> y <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
-      <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;除數不可為0&#34;</span>)    
-    <span style="color:#66d9ef">elif</span> y <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>: 
-      <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;計算結果為({}//{}={})&#34;</span><span style="color:#f92672">.</span>format(x,y,(x<span style="color:#f92672">//</span>y)))
-<span style="color:#66d9ef">elif</span> z <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;%&#39;</span>:
-    <span style="color:#66d9ef">if</span> y <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
-      <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;除數不可為0&#34;</span>)    
-    <span style="color:#66d9ef">elif</span> y <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>: 
-      <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;計算結果為({}%{}={})&#34;</span><span style="color:#f92672">.</span>format(x,y,(x<span style="color:#f92672">%</span>y))) 
-<span style="color:#66d9ef">elif</span> z <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;**&#39;</span>:
-   <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;計算結果為({}**{}={})&#34;</span><span style="color:#f92672">.</span>format(x,y,(x<span style="color:#f92672">**</span>y))) 
-<span style="color:#66d9ef">else</span>:
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;運算方式不合規則&#34;</span>)
+x = int(input(&quot;請輸入第一個整數:&quot;))
+y = int(input(&quot;請輸入第二個整數:&quot;))
+z = input(&quot;請輸入運算方式(+、-、*、/、//、%、**):&quot;)
 
-</code></pre></div>
+if z == '+':
+   print(&quot;計算結果為({}+{}={})&quot;.format(x,y,(x+y)))
+elif z == '-':
+   print(&quot;計算結果為({}-{}={})&quot;.format(x,y,(x-y))) 
+elif z == '*':
+   print(&quot;計算結果為({}*{}={})&quot;.format(x,y,(x*y))) 
+elif z == '/':
+    if y == 0:
+      print(&quot;除數不可為0&quot;)    
+    elif y &gt; 0:  
+      print(&quot;計算結果為({}/{}={})&quot;.format(x,y,(x/y))) 
+elif z == '//':
+    if y == 0:
+      print(&quot;除數不可為0&quot;)    
+    elif y &gt; 0: 
+      print(&quot;計算結果為({}//{}={})&quot;.format(x,y,(x//y)))
+elif z == '%':
+    if y == 0:
+      print(&quot;除數不可為0&quot;)    
+    elif y &gt; 0: 
+      print(&quot;計算結果為({}%{}={})&quot;.format(x,y,(x%y))) 
+elif z == '**':
+   print(&quot;計算結果為({}**{}={})&quot;.format(x,y,(x**y))) 
+else:
+    print(&quot;運算方式不合規則&quot;)
+
+</code></pre>
         </div>
 
         
@@ -180,7 +188,7 @@ z <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;�
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 text-center mb-5">
-        <a href="https://shou0802.github.io"><img src="https://shou0802.github.io/images/logo.png" alt="阿粥系的部落格"></a>
+        <a href="https://shou0802.github.io"><img src="https://shou0802.github.io/images/logo-black.png" alt="阿粥系的部落格"></a>
       </div>
                
       <div class="col-lg-3 col-sm-6 mb-5">
@@ -210,9 +218,6 @@ z <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;�
         <h6 class="mb-4">Categories</h6>
         <ul class="list-unstyled">
           <li class="mb-3"><a class="text-dark"
-              href="/categories/go-language">Go language</a>
-          </li>
-          <li class="mb-3"><a class="text-dark"
               href="/categories/python">Python</a>
           </li>
         </ul>
@@ -224,8 +229,6 @@ z <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;�
           <li class="mb-3"><a class="text-dark" href="https://shou0802.github.io/about">About</a></li>
           
           <li class="mb-3"><a class="text-dark" href="https://shou0802.github.io/blog">Post</a></li>
-          
-          <li class="mb-3"><a class="text-dark" href="https://shou0802.github.io/contact">Contact</a></li>
           
         </ul>
       </div>
