@@ -8,11 +8,25 @@
     <language>zh-tw</language>
     <lastBuildDate>Tue, 29 Oct 2019 13:49:23 +0600</lastBuildDate><atom:link href="https://shou0802.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Python練習筆記06</title>
+      <link>https://shou0802.github.io/blog/python%E7%B7%B4%E7%BF%92%E7%AD%86%E8%A8%9806/</link>
+      <pubDate>Thu, 19 Nov 2020 11:20:47 +0800</pubDate>
+      
+      <guid>https://shou0802.github.io/blog/python%E7%B7%B4%E7%BF%92%E7%AD%86%E8%A8%9806/</guid>
+      <description>倍數的個數與總和 ・設計說明:
+請撰寫一程式·讓使用者輸入兩個正整數a,b(a&amp;lt;=b),
+輸出這兩個正整數(包含)間7或11的倍數(一列輸出
+10個數字,欄寬為4、靠左對齊)、以及倍數的個數
+與總和
+# -*- coding: utf-8 -*-&amp;quot;&amp;quot;&amp;quot;Created on Tue Nov 17 14:30:53 2020@author: shou&amp;quot;&amp;quot;&amp;quot;print(&amp;quot;請輸入兩個正整數，起始值不大於結束值&amp;quot;)a = int(input(&amp;quot;請輸入起始值:&amp;quot;))b = int(input(&amp;quot;請輸入結束值:&amp;quot;))count = 0total = 0if a&amp;lt;b and a&amp;gt;0 and b&amp;gt;0:for i in range(a,b+1):if i%7==0 or i%11==0:print(&amp;quot;{:&amp;lt;4d}&amp;quot;.</description>
+    </item>
+    
+    <item>
       <title>Python練習筆記05</title>
-      <link>https://shou0802.github.io/blog/python%E7%B7%B4%E7%BF%92%E7%AD%86%E8%A8%9804/</link>
+      <link>https://shou0802.github.io/blog/python%E7%B7%B4%E7%BF%92%E7%AD%86%E8%A8%9805/</link>
       <pubDate>Wed, 18 Nov 2020 12:07:47 +0800</pubDate>
       
-      <guid>https://shou0802.github.io/blog/python%E7%B7%B4%E7%BF%92%E7%AD%86%E8%A8%9804/</guid>
+      <guid>https://shou0802.github.io/blog/python%E7%B7%B4%E7%BF%92%E7%AD%86%E8%A8%9805/</guid>
       <description>列印九九乘法表 •設計說明：
 請撰寫一程式，列印九九乘法表，且呈現方式如下顯示，並且排列整齊。
 # -*- coding: utf-8 -*-&amp;quot;&amp;quot;&amp;quot;Created on Mon Nov 16 15:38:46 2020@author: shou&amp;quot;&amp;quot;&amp;quot;for i in range(2,10):for j in range(1,10):print(&amp;quot;{}*{}={:&amp;lt;2}&amp;quot;.</description>
@@ -20,10 +34,10 @@
     
     <item>
       <title>Python練習筆記04</title>
-      <link>https://shou0802.github.io/blog/python%E7%B7%B4%E7%BF%92%E7%AD%86%E8%A8%9805/</link>
+      <link>https://shou0802.github.io/blog/python%E7%B7%B4%E7%BF%92%E7%AD%86%E8%A8%9804/</link>
       <pubDate>Wed, 18 Nov 2020 11:07:47 +0800</pubDate>
       
-      <guid>https://shou0802.github.io/blog/python%E7%B7%B4%E7%BF%92%E7%AD%86%E8%A8%9805/</guid>
+      <guid>https://shou0802.github.io/blog/python%E7%B7%B4%E7%BF%92%E7%AD%86%E8%A8%9804/</guid>
       <description>列印數字三角形 •設計說明1：
 請撰寫一程式，第一排列印1~9，中間間一空白，第二排列印2~9，第三排3~9，第四排4~9，…
 •設計說明2：
