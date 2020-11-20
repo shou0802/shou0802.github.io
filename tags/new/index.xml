@@ -6,7 +6,16 @@
     <description>Recent content in New on 阿宅老洪的部落格</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 19 Nov 2020 11:20:47 +0800</lastBuildDate><atom:link href="https://shou0802.github.io/tags/new/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Nov 2020 18:03:47 +0800</lastBuildDate><atom:link href="https://shou0802.github.io/tags/new/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python作品07</title>
+      <link>https://shou0802.github.io/blog/python%E4%BD%9C%E5%93%8107/</link>
+      <pubDate>Fri, 20 Nov 2020 18:03:47 +0800</pubDate>
+      
+      <guid>https://shou0802.github.io/blog/python%E4%BD%9C%E5%93%8107/</guid>
+      <description>猜數字1A2B •玩法說明： 1.一般來說，遊戲是一個人設定沒有重複的0~9數字的4位數，由另一方來猜。2.猜方每猜一個數，數字一定得4位數，數字也不可重複。3.設定方就給出幾A幾B，猜中的數字，如果位置也對，則累計一個A；位置不對，則累計一個B；如果都沒有猜中數字，就是0A0B4.重複步驟2~3，直至猜中4A0B為止。# -*- coding: utf-8 -*-&amp;quot;&amp;quot;&amp;quot;Created on Fri Nov 20 15:21:46 2020@author: shou&amp;quot;&amp;quot;&amp;quot;import randompwd = random.</description>
+    </item>
+    
     <item>
       <title>Python作品06</title>
       <link>https://shou0802.github.io/blog/python%E4%BD%9C%E5%93%8106/</link>

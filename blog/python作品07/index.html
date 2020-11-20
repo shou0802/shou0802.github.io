@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>阿宅老洪的部落格</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Python作品07">
+  <meta name="author" content="shou">
+  <meta name="generator" content="Hugo 0.78.2" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://shou0802.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://shou0802.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://shou0802.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://shou0802.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://shou0802.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://shou0802.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://shou0802.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-183492563-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://shou0802.github.io"><img class="img-fluid"
+          src="https://shou0802.github.io/images/logo-black.png" alt="阿宅老洪的部落格"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/shou0802"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://shou0802.github.io"><img class="img-fluid"
+            src="https://shou0802.github.io/images/logo-black.png" alt="阿宅老洪的部落格"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://shou0802.github.io/about">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://shou0802.github.io/blog">Post</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://shou0802.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="/categories/python"
+          class="text-primary">Python</a>
+        
+        <h2>Python作品07</h2>
+        <div class="mb-3 post-meta">
+          <span>By shou</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>20 November 2020</span>
+          
+        </div>
+        
+        <img src="https://shou0802.github.io/images/post/python.jpg" class="img-fluid w-100 mb-4" alt="Python作品07">
+        
+        <div class="content mb-5">
+          <h1 id="猜數字1a2b">猜數字1A2B</h1>
+<p>•玩法說明：
+1.一般來說，遊戲是一個人設定沒有重複的0~9數字的4位數，由另一方來猜。<!-- raw HTML omitted --></p>
+<p>2.猜方每猜一個數，數字一定得4位數，數字也不可重複。<!-- raw HTML omitted --></p>
+<p>3.設定方就給出幾A幾B，猜中的數字，如果位置也對，則累計一個A；位置不對，則累計一個B；如果都沒有猜中數字，就是0A0B<!-- raw HTML omitted --></p>
+<p>4.重複步驟2~3，直至猜中4A0B為止。<!-- raw HTML omitted --></p>
+<p><img src="/images/post/image-202011201803.png" alt="image"></p>
+<pre><code># -*- coding: utf-8 -*-
+&quot;&quot;&quot;
+Created on Fri Nov 20 15:21:46 2020
+
+@author: shou
+&quot;&quot;&quot;
+
+import random
+
+pwd = random.sample(range(0,10),4)
+#print(pwd)
+
+A = 0
+B = 0
+
+while A != 4:
+    num =input(&quot;請輸入四個數字:&quot;)
+    while len(num)!= 4 or len(set(num)) != 4:
+        num = input(&quot;請輸入四個數字，且數字不能重複:&quot;)
+    list1 = list(map(int,list(num))  )
+    #print(list1)
+    A = 0
+    B = 0
+    for i in list1:
+        if i in pwd:
+            if list1.index( i ) == pwd.index( i ):
+                A += 1
+            else:
+                B += 1
+    print(num,&quot;:&quot;,A,&quot;A&quot;,B,&quot;B&quot;,sep=&quot;&quot;)
+
+print(&quot;你猜對了密碼是&quot;,num)
+</code></pre>
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "shou0802" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © 2020 <a href="https://themefisher.com">Themefisher</a> All Rights Reserved |
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://shou0802.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://shou0802.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://shou0802.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://shou0802.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://shou0802.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://shou0802.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://shou0802.github.io/plugins/search/mark.js"></script>
+
+<script src="https://shou0802.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://shou0802.github.io/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+</body>
+</html>
