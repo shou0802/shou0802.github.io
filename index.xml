@@ -8,7 +8,7 @@
     <language>zh-tw</language>
     <lastBuildDate>Fri, 20 Nov 2020 18:03:47 +0800</lastBuildDate><atom:link href="https://shou0802.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Python作品07</title>
+      <title>Python作品07-猜數字1A2B</title>
       <link>https://shou0802.github.io/blog/python%E4%BD%9C%E5%93%8107/</link>
       <pubDate>Fri, 20 Nov 2020 18:03:47 +0800</pubDate>
       
@@ -17,7 +17,7 @@
     </item>
     
     <item>
-      <title>Python作品06</title>
+      <title>Python作品06-倍數的個數與總和</title>
       <link>https://shou0802.github.io/blog/python%E4%BD%9C%E5%93%8106/</link>
       <pubDate>Thu, 19 Nov 2020 11:20:47 +0800</pubDate>
       
@@ -31,7 +31,7 @@
     </item>
     
     <item>
-      <title>Python作品05</title>
+      <title>Python作品05-列印九九乘法表</title>
       <link>https://shou0802.github.io/blog/python%E4%BD%9C%E5%93%8105/</link>
       <pubDate>Wed, 18 Nov 2020 12:07:47 +0800</pubDate>
       
@@ -42,7 +42,7 @@
     </item>
     
     <item>
-      <title>Python作品04</title>
+      <title>Python作品04-列印數字三角形</title>
       <link>https://shou0802.github.io/blog/python%E4%BD%9C%E5%93%8104/</link>
       <pubDate>Wed, 18 Nov 2020 11:07:47 +0800</pubDate>
       
@@ -55,7 +55,7 @@
     </item>
     
     <item>
-      <title>Python作品03</title>
+      <title>Python作品03-列印三角圖形</title>
       <link>https://shou0802.github.io/blog/python%E4%BD%9C%E5%93%8103/</link>
       <pubDate>Wed, 18 Nov 2020 10:47:47 +0800</pubDate>
       
@@ -66,7 +66,7 @@
     </item>
     
     <item>
-      <title>Python作品02</title>
+      <title>Python作品02-閏年判斷</title>
       <link>https://shou0802.github.io/blog/python%E4%BD%9C%E5%93%8102/</link>
       <pubDate>Wed, 18 Nov 2020 10:17:47 +0800</pubDate>
       
@@ -77,12 +77,12 @@
     </item>
     
     <item>
-      <title>Python作品01</title>
+      <title>Python作品01-運算式輸入計算</title>
       <link>https://shou0802.github.io/blog/python%E4%BD%9C%E5%93%8101/</link>
       <pubDate>Wed, 18 Nov 2020 10:07:47 +0800</pubDate>
       
       <guid>https://shou0802.github.io/blog/python%E4%BD%9C%E5%93%8101/</guid>
-      <description>運算式輸入計算練習 設計說明：
+      <description>運算式輸入計算 設計說明：
 請撰寫一程式，讓使用者輸入兩個整數a, b，接著輸入其中一個運算子(+、-、*、/、//、%、** )，最後輸出兩個整數運算的結果。
 # -*- coding: utf-8 -*-&amp;quot;&amp;quot;&amp;quot;Created on Thu Nov 12 13:09:12 2020@author: shou&amp;quot;&amp;quot;&amp;quot;x = int(input(&amp;quot;請輸入第一個整數:&amp;quot;))y = int(input(&amp;quot;請輸入第二個整數:&amp;quot;))z = input(&amp;quot;請輸入運算方式(+、-、*、/、//、%、**):&amp;quot;)if z == &#39;+&#39;:print(&amp;quot;計算結果為({}+{}={})&amp;quot;.</description>
     </item>
